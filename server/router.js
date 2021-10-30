@@ -15,6 +15,7 @@ const route = async(pathname, req, res) => {
     if (typeof handle[pathname] === "function") {
         handle[pathname](req, res);
     } else {
+        // this is to automatically serve js and css files.
         let file = await fileHand.getFile('public/' + pathname.substr(1));
         if (file != false) {
             res.writeHead(200, { 'content-type': file.mime });
