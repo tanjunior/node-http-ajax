@@ -1,0 +1,16 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Tan Jing Ren",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "formidable": "^2.0.0-canary.20200504.1"
+  }
+}

@@ -1,0 +1,27 @@
+<form id="searchForm" class="control has-text-centered" onsubmit="search(event)">
+    
+    <div class="field has-addons">
+        <div class="control is-expanded">
+            <input class="input" type="text" name="keyword" zplaceholder="Find a repository"/>
+        </div>
+        <div class="control">
+            <button type="submit" class="button is-info">
+                Search
+            </button>
+        </div>
+    </div>
+</form>
+
+<table class="table" id="resultTable">
+
+</table>
+
+<div id="myModal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <p class="image is-4by3">
+            <img id="myImg">
+        </p>
+    </div>
+    <button id="closeModal" class="modal-close is-large" aria-label="close"></button>
+</div>
