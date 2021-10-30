@@ -1,0 +1,86 @@
+<form id="uploadForm" class="control has-text-centered" onsubmit="upload(event)">
+
+    <div class="field">
+        <div class="control">
+            <input class="input" type="number" name="sid" placeholder="Student ID" />
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <input class="input" type="text" name="fname" placeholder="First Name" />
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <input class="input" type="text" name="lname" placeholder="Last Name" />
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <input class="input" type="number" name="age" placeholder="Age" />
+        </div>
+    </div>
+
+    <div class="control">
+        <label class="radio">
+            <input type="radio" name="gender" value="m" />
+            Male
+        </label>
+        <label class="radio">
+            <input type="radio" name="gender" value="f" />
+            Female
+        </label>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <input class="input" type="text" name="degree" placeholder="Degree" />
+        </div>
+    </div>
+
+
+    <div id="photo-input" class="file has-name">
+        <label class="file-label">
+            <input id="file-input" class="file-input" type="file" accept="image/*" name="photo" />
+            <span class="file-cta">
+                <span class="file-icon">
+                    <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label">
+                    Choose an Image
+                </span>
+            </span>
+            <span class="file-name">
+            </span>
+        </label>
+    </div>
+    <br />
+
+    <div class="field is-grouped">
+        <div class="control">
+            <button type="submit" class="button is-link is-medium">Submit</button>
+        </div>
+        <div class="control">
+            <button type="reset" class="button is-link is-light is-medium">Cancel</button>
+        </div>
+    </div>
+
+</form>
+
+<div id="myModal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <button id="closeModal" class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p id="message"></p>
+        </section>
+        
+        <footer class="modal-card-foot">
+        </footer>
+    </div>
+</div>

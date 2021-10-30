@@ -24,12 +24,12 @@ const streamFile = (res, filepath) => {
     })
 }
 
-const renamePhoto = async(filepath, name, newName) => {   
-    let ext = path.parse(name).ext;
+const renamePhoto = async(filepath, filename, newName) => {   
+    let ext = path.parse(filename).ext;
     try {
         await fs.promises.rename(filepath, `server/photos/${newName+ext}`);
         return newName+ext;
-    } catch (error) {
+    } catch (err) {
         return false;
     }
 }
@@ -56,12 +56,11 @@ const addToCSV = async(data) => {
 }
 
 const serve404 = async(res) => {
-    let file = await getFile('public/404.html');
-    if (file != false) {
-        res.writeHead(404, { 'content-type': 'text/html' });
-        res.write(file.data);
-        res.end();
-    }
+    let file = await getFile('public/html/404.html');
+    if (!file) return
+    res.writeHead(404, { 'content-type': 'text/html' });
+    res.write(file.data);
+    res.end();
 }
 
 exports.serve404 = serve404;

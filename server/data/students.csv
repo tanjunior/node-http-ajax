@@ -1,20 +1,3 @@
 id,fname,lname,age,gender,degree,photo
-4,d,D,4,f,IT,4.png
-1,a,A,1,f,Z,
-2,b,B,2,f,X,
-3,C,c,3,f,C,
-5,e,E,5,M,IT,
-6,f,F,6,M,IT,6.png
-7,g,G,7,m,IT,7.png
-8,h,H,8,m,IT,8.png
-9,i,I,9,m,IT,9.png
-10,j,J,10,m,IT,
-11,k,K,11,m,IT,
-12,l,L,12,f,IT,
-13,m,M,13,m,IT,
-14,n,N,14,m,IT,
-15,o,O,15,m,IT,
-16,p,P,16,m,IT,
-17,q,Q,17,m,it,17.png
-18,r,R,18,m,it,18.png
-19,s,S,19,m,asdasd,19.png
+1,James,Bond,50,m,The Art of Subterfuge,1.jpg
+2,Johnbrbr,Cenascriptalertattack,40,m,The Art of you Cant See Me
